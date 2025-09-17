@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$sidebar-width: 240px;
+$gradient-primary: linear-gradient(135deg, #00C7BE 0%, #0097C7 100%);
+$gradient-hover: linear-gradient(135deg, #00B3A8 0%, #0085B3 100%);
+$blur-circle: linear-gradient(180deg, #00C7BE 0%, #0097C7 100%);
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.sidebar-wrapper {
+  width: $sidebar-width;
+}
+
+.main-content {
+  width: calc(100% - #{$sidebar-width});
+}
+
+.dashboard-wrapper {
+  max-height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $gradient-primary;
+    border-radius: 4px;
+
+    &:hover {
+      background: $gradient-hover;
+    }
+  }
+}
+
+.dashboard-gradient {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f8fffe 30%,
+    #f0fdfa 70%,
+    #e6fffa 100%
+  );
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: fixed;
+    width: 425px;
+    height: 425px;
+    background: $blur-circle;
+    border-radius: 50%;
+    filter: blur(300px);
+    z-index: 0;
+  }
+
+  &::before {
+    top: -110px;
+    left: 110px;
+  }
+
+  &::after {
+    bottom: -110px;
+    right: 110px;
+  }
+}
+
+.learning-path-container {
+  position: relative;
+
+  .learning-path-inner-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 33.75px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1040px;
+      background-image: url('/bg-path.svg');
+      background-repeat: repeat-y;
+      background-position: 50% top;
+      background-size: auto;
+    }
+  }
+}
+
+.single-learning-path {
+  width: 100%;
+  margin-bottom: 33.75px;
+  clear: both;
+  position: relative;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  &:first-child {
+    margin-bottom: 0;
+
+    .learning-thumbnail {
+      margin-top: -33.75px;
+    }
+  }
+
+  .learning-thumbnail {
+    width: 135px;
+    height: 135px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    background: conic-gradient(
+      from 0deg,
+      #00C7BE 0deg,
+      #00C7BE var(--progress-percentage, 0%),
+      #E5E7EB var(--progress-percentage, 0%),
+      #E5E7EB 100%
+    );
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 125px;
+      height: 125px;
+      border-radius: 50%;
+      background: white;
+      z-index: 1;
+    }
+
+    img {
+      width: 125px;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 50%;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &:nth-child(4n+1) .learning-thumbnail {
+    left: 43%;
+  }
+
+  &:nth-child(4n+2) .learning-thumbnail {
+    left: 55%;
+  }
+
+  &:nth-child(4n+3) .learning-thumbnail {
+    left: 43%;
+  }
+
+  &:nth-child(4n) .learning-thumbnail {
+    left: 33%;
+  }
+}
+
+.fixed-left-section {
+  position: fixed;
+  top: 180px;
+  left: 25%;
+  z-index: 10;
+}
+
+.fixed-right-section {
+  position: fixed;
+  bottom: 90px;
+  right: 11%;
+  z-index: 10;
+}
+
+.timeline-container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1199px) and (max-width: 1367px) {
+  .fixed-right-section {
+    right: 5%;
+  }
+}
