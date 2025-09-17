@@ -1,0 +1,158 @@
+[
+  {
+    "id": "abcde",
+    "index": 1,
+    "level": 1,
+    "name": "Counterattack",
+    "leftTitle": "Welcome!",
+    "leftSubitle": "Lets study some openings.",
+    "rightTitle": "Time to practice",
+    "rightSubitle": "Lets play some games",
+    "chapters": [
+      {
+        "id": "bcd",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 76
+      },
+      {
+        "id": "bce",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 45
+      },
+      {
+        "id": "bcf",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 100
+      },
+      {
+        "id": "bcf",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 50
+      },
+      {
+        "id": "bcf",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 60
+      },
+      {
+        "id": "bcf",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 100
+      }      
+    ]
+  },
+  {
+    "id": "fghij",
+    "index": 2,
+    "level": 2,
+    "name": "Endgame Mastery",
+    "leftTitle": "Welcome!",
+    "leftSubitle": "Lets study some openings.",
+    "chapters": [
+      {
+        "id": "efg",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 20
+      },
+      {
+        "id": "efh",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 0
+      },
+      {
+        "id": "efi",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 60
+      },
+      {
+        "id": "abc",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 60
+      }
+    ]
+  },
+  {
+    "id": "klmno",
+    "index": 3,
+    "level": 3,
+    "name": "Opening Principles",
+    "leftTitle": "Welcome!",
+    "leftSubitle": "Lets study some openings.",
+    "rightTitle": "Time to practice",
+    "rightSubitle": "Lets play some games",
+    "chapters": [
+      {
+        "id": "klm",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 90
+      },
+      {
+        "id": "kln",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 10
+      }
+    ]
+  },
+  {
+    "id": "pqrst",
+    "index": 4,
+    "level": 4,
+    "name": "Tactical Motifs",
+    "leftTitle": "Welcome!",
+    "leftSubitle": "Lets study some openings.",
+    "rightTitle": "Time to practice",
+    "rightSubitle": "Lets play some games",
+    "chapters": [
+      {
+        "id": "pqr",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 55
+      },
+      {
+        "id": "pqs",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 80
+      },
+      {
+        "id": "pqt",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 33
+      },
+      {
+        "id": "pqu",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 0
+      },
+      {
+        "id": "pqr",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 55
+      },
+      {
+        "id": "pqs",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 80
+      },
+      {
+        "id": "pqt",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 33
+      },
+      {
+        "id": "pqu",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 0
+      },
+      {
+        "id": "pqr",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 55
+      },
+      {
+        "id": "pqs",
+        "image": "/chess-thumb.png",
+        "progressPercentage": 80
+      }
+    ]
+  }
+]
